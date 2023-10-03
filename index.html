@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media-queries.css">
     <link rel="icon" tye="image/jpg" href="images/logoicon.jpg">
-    <title>Franz Luya</title>
+    <title>Franz Luya | IT Student</title>
   </head>
   <body>
     <nav id="navbar">
+      <a href="#home">
       <div class="logo">
+        
         <img class="logo-img" src="images/logoicon.jpg" alt="logo" />Franz.dev
       </div>
-     
+    </a>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -32,7 +33,6 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -46,12 +46,25 @@
         
         <h1 class="name-text">Franz Luya</h1>
         <p class="section_text_p2">Aspiring Full Stack Developer</p>
+        <div class="btn-container">
+          <button class="btn btn1" onclick="location.href='#about'">About Me</button>
+        </div>
         <div class="socials-container">
           <img 
           src="images/github-logo.png" 
           class="icon" 
           alt="My Github Profile" 
           onclick="location.href='https://github.com/pransfranz'">
+          <img 
+          src="images/iglogo.png" 
+          class="icon" 
+          alt="My Instagram Profile" 
+          onclick="location.href='https://instagram.com/pransfranz'">
+          <img 
+          src="images/fblogo.png" 
+          class="icon" 
+          alt="My Facebook Profile" 
+          onclick="location.href='https://facebook.com/frnzjlsly'">
         </div>
       </div>
      
