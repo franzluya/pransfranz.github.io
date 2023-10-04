@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media-queries.css">
-    <link rel="icon" tye="image/jpg" href="images/logoicon.jpg">
+    <link rel="stylesheet" href="media-queries.css" />
+    <link rel="icon" tye="image/jpg" href="images/logoicon.jpg" />
     <title>Franz Luya | IT Student</title>
   </head>
   <body>
     <nav id="navbar">
       <a href="#home">
-      <div class="logo">
-        
-        <img class="logo-img" src="images/logoicon.jpg" alt="logo" />Franz.dev
-      </div>
-    </a>
+        <div class="logo">
+          <img class="logo-img" src="images/logoicon.jpg" alt="logo" />Franz.dev
+        </div>
+      </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -25,7 +24,9 @@
       </ul>
     </nav>
     <nav id="mobile-nav">
-      <div class="logo"> <img class="logo-img" src="images/logoicon.jpg" alt="logo" />Franz.dev</div>
+      <div class="logo">
+        <img class="logo-img" src="images/logoicon.jpg" alt="logo" />Franz.dev
+      </div>
       <div class="mobile-menu">
         <div class="menu-icon" onclick="toggleMenu()">
           <span></span>
@@ -42,36 +43,85 @@
     </nav>
     <section id="profile">
       <div class="section_text">
-        <p class="section_text_p1">Hello<span class="emoji wave" role="img" aria-label="hand wave"></span>,  I'm</p>
-        
-        <h1 class="name-text">Franz Luya</h1>
+        <p class="section_text_p1">
+          Hello<span class="emoji wave" role="img" aria-label="hand wave"></span
+          >, I'm
+        </p>
+
+        <h1 class="title">Franz Luya</h1>
         <p class="section_text_p2">Aspiring Full Stack Developer</p>
         <div class="btn-container">
-          <button class="btn btn1" onclick="location.href='#about'">About Me</button>
+          <button class="btn btn1" onclick="location.href='#about'">
+            About Me
+          </button>
         </div>
         <div class="socials-container">
-          <img 
-          src="images/github-logo.png" 
-          class="icon" 
-          alt="My Github Profile" 
-          onclick="location.href='https://github.com/pransfranz'">
-          <img 
-          src="images/iglogo.png" 
-          class="icon" 
-          alt="My Instagram Profile" 
-          onclick="location.href='https://instagram.com/pransfranz'">
-          <img 
-          src="images/fblogo.png" 
-          class="icon" 
-          alt="My Facebook Profile" 
-          onclick="location.href='https://facebook.com/frnzjlsly'">
+          <img
+            src="images/github-logo.png"
+            class="icon"
+            alt="My Github Profile"
+            onclick="location.href='https://github.com/pransfranz'"
+          />
+          <img
+            src="images/iglogo.png"
+            class="icon"
+            alt="My Instagram Profile"
+            onclick="location.href='https://instagram.com/pransfranz'"
+          />
+          <img
+            src="images/fblogo.png"
+            class="icon"
+            alt="My Facebook Profile"
+            onclick="location.href='https://facebook.com/frnzjlsly'"
+          />
         </div>
       </div>
-     
       <div class="section_pic-container">
-        <img src="images/logo.png" alt="Franz Luya">
+        <img src="images/logo.png" alt="Franz Luya" />
       </div>
-     
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get to know more</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="/images/logoicon.jpg"
+            alt="franzluya-logo"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="text-container">
+              My coding journey began with a curiosity in technology and i've
+              been exploring in web development ever since. I believe in the
+              ability of code to make ideas into reality. Whether it's designing
+              the front-end experience or building robust back-end systems, I'm
+              determined to learn and grow in this field.
+            </div>
+            <div class="details-container">
+              <div class="education-title">
+                <img
+                  src="./images/edu-logo.png"
+                  alt="education-logo"
+                  class="icon"
+                />
+                <h3>Education</h3>
+              </div>
+              <p>
+                •  2022 - Present<br />College (Bachelor of Science in
+                Information Technology)
+              </p>
+              <br />
+              <p>
+                • 2020 - 2022<br />Senior High School (TVL- Information and
+                Communication Technology)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="script.js"></script>
   </body>

@@ -168,7 +168,7 @@ section{
   font-size: 1.4rem;
 }
 
-.name-text{
+.title{
   font-size: 3rem;
   text-align: center;
 }
@@ -209,7 +209,7 @@ section{
   border-radius: 2rem;
 }
 .btn1{
-border: rgb(53, 53, 53 ) 0.15rem solid;
+border: rgb(53, 53, 53 ) 0.12rem solid;
 }
 .btn1:hover{
   cursor: pointer;
@@ -227,4 +227,46 @@ border: rgb(53, 53, 53 ) 0.15rem solid;
   cursor: pointer;
   height: 2.3rem;
   
+}
+
+#about{
+  position: relative;
+}
+.about-container{
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.about-details-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-container{
+  display: flex;
+}
+.education-title{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+.text-container{
+  padding-bottom: 1rem;
+}
+.details-container{
+  align-self: center;
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border:rgb(53, 53, 53 ) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.section-container{
+  gap: 4rem;
+  height: 80%;
 }
