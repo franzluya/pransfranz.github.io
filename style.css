@@ -90,6 +90,7 @@ a {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
   z-index: 5;
+  padding: 5px;
 }
 .menu-links a {
   display: block;
