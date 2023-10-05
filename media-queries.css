@@ -72,10 +72,16 @@
   }
   .section_pic-container{
     width: auto;
-    height: 46vw;
+    height: 64vw;
     justify-content: center;
   }
-  .text-continer{
+  .text-container{
     text-align: justify;
+  }
+  .section_text_p2{
+    font-size: 1.2rem;
+  }
+  .section-text{
+    padding-top: 2rem;
   }
 }
