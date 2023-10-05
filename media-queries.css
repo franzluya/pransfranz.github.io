@@ -39,6 +39,8 @@
   .note{
     width: 90%;
   }
+  .section_text_p1 {
+  padding-top: 1rem;
   .section_text_p2{
     font-size: 1.4rem;
   }
