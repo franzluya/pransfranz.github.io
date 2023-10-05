@@ -379,7 +379,7 @@ section {
   border: rgba(53, 53, 53, 0)  solid;
   border-radius: 1rem;
   width: fit-content;
-  padding: 0;
+  padding: 1rem;
 
 }
 .note h1{
