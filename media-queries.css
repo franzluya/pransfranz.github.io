@@ -93,12 +93,12 @@
     padding-top: 5rem;
   }
   .contact-info-container{
-    padding: 0;
+    padding: 2px auto;
     
   }
   .contact-form{
-    width: 88vw;
-    padding: 2rem;
+    width: 90vw;
+    padding: 1rem;
   }
   
 
@@ -108,7 +108,7 @@
 .contact-form{
   
   
-  margin: 5rem auto;
+  margin: 1rem auto;
   
 }
 }
