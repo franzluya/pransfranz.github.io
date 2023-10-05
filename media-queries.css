@@ -41,7 +41,7 @@
   }
 
   .section_text_p2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .about-container{
     margin-top: 0;
@@ -57,11 +57,11 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: 84vh;
     margin-bottom: 0;
   }
   footer nav{
-   margin-top: 55vh;
+   margin-top: 65vh;
     height: fit-content;
     margin-bottom: 2rem;
   }
@@ -90,7 +90,7 @@
   }
   .section-text{
     margin-top: 3px;
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
   .contact-info-container{
     padding: 2px auto;
