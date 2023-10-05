@@ -399,6 +399,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 40px;
   gap: 1rem;
 }
 .contact-details p {
@@ -413,7 +414,7 @@ section {
   justify-content: center;
   margin: 2rem auto;
   align-items: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
   width: 60%;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
