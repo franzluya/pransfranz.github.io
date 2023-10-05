@@ -1,8 +1,81 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1400px) {
+  #profile{
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  #about{
+    flex-wrap: wrap;
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
   #navbar {
     display: none;
   }
   #mobile-nav {
     display: flex;
+  }
+  #skills{
+    margin-top: 2rem;
+  }
+  #profile, .section-container{
+    display: block;
+  }
+  section, .section-container{
+    height: fit-content;
+  }
+  section{
+    margin: 0 5%;
+  }
+  .section_pic-container{
+    padding-top: 1rem;
+    width: 275px;
+    height: 275px;
+    margin: 0 auto;
+  }
+  .note{
+    width: 90%;
+  }
+  .section_text_p2{
+    font-size: 1.4rem;
+  }
+  .about-container{
+    margin-top: 0;
+  }
+  .logos-container{
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact, footer{
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  footer nav{
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-container
+  .btn-container{
+    flex-wrap: wrap;
+  }
+  .nav-links{
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section_pic-container{
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .text-continer{
+    text-align: justify;
   }
 }
