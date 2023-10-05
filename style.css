@@ -6,11 +6,10 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
-  
   font-family: "Poppins", sans-serif;
   background-color: rgb(255, 255, 255);
 }
@@ -360,43 +359,120 @@ section {
   }
 }
 
-.note span{
+.note span {
   font-weight: 500;
   font-size: 2rem;
 }
-.note{
+.note {
   margin: 5rem auto;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 1rem;
   padding: 1.5rem;
   width: 80%;
 }
-.note p{
+.note p {
   font-size: 0.8rem;
   font-weight: 800;
   color: rgb(92, 91, 91);
   background-color: rgba(202, 201, 201, 40%);
-  border: rgba(53, 53, 53, 0)  solid;
+  border: rgba(53, 53, 53, 0) solid;
   border-radius: 1rem;
   width: fit-content;
   padding: 1rem;
-
 }
-.note h1{
+.note h1 {
   padding-top: 20px;
   text-align: center;
   font-weight: 600;
   font-size: 3rem;
 }
 
+.contact-info-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem;
+  min-height: 80vh;
+}
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact-details p {
+  font-weight: 500;
+}
+.contact-details img {
+  height: 40px;
+}
+.contact-form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 2rem auto;
+  align-items: center;
+  padding: 3rem 0;
+  width: 60%;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  border-radius: 2rem;
+}
+.contact-form .input-box {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
 
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1rem;
+  margin: 15px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
 
-footer{
+.contact-form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:valid ~ span,
+
+.contact-form .input-box textarea:focus ~ span
+ {
+  color: #e91e63;
+  font-size: 12px;
+  font-weight: 600;
+  transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]{
+  width: 120px;
+  background: #000000;
+  padding: 10px 0;
+  color: #fff;
+}
+
+footer {
+  padding-top: 5rem;
   height: 26vh;
   margin: 0 1rem;
 }
 
-footer p{
+footer p {
   padding-top: 1.5rem;
- text-align: center; 
+  text-align: center;
 }
