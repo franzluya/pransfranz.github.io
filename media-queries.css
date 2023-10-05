@@ -85,7 +85,8 @@
     font-size: 1.3rem;
   }
   .section-text{
-    padding-top: 4.5rem;
+    margin-top: 3px;
+    padding-top: 5rem;
   }
   .contact-info-container{
     padding: 0;
