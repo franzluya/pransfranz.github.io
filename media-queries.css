@@ -18,10 +18,6 @@
 
     min-height: 60vh;
   }
-  footer {
-    padding-top: 42vh;
-    height: 18vh;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -69,11 +65,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    
-    height: 50vh;
-  }
+  
   #profile {
     height: 82vh;
     margin-bottom: 0;
@@ -86,7 +78,7 @@
     margin-bottom: 40vh;
   }
   #skills{
-    padding-top: 20vh;
+    padding-top: 10px;
   }
   footer nav {
     margin-top: 70vh;
@@ -139,7 +131,5 @@
   .contact-form .input-box {
     width: 75vw;
   }
-  footer{
-    margin-top: 60px;
-  }
+
 }

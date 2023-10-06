@@ -478,13 +478,39 @@ section {
   background: rgb(255, 255, 255);
   color: rgb(53, 53, 53);
 }
-footer {
-  padding-top: 3rem;
-  height: 70px;
-  margin: 0 1rem;
+
+.footer{
+  margin-top: 170px;
+  background-color: #0e0e0e;
+  color: hsl(0, 0%, 100%);
+  padding: 50px 0;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
 }
 
-footer p {
-  padding-top: 1.5rem;
-  text-align: center;
+.container-footer{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer-info h3{
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Hammersmith One', sans-serif;
+}
+.footer-info p{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.social-container{
+  display: flex;
+  align-items: center;
+}
+
+.social-icon{
+  font-size: 28px;
+  color: #017c78;
+  margin: 0 10px;
 }
