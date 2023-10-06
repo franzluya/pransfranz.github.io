@@ -174,17 +174,17 @@
           </div>
         </div>
         <div class="contact-form">
-          <form>
+          <form onsubmit="sendEmail(); reset(); return false;">
             <p>Or</p>
             <h1>Send Message</h1>
             <div class="input-box">
             <input
               type="text"
-              name="full-name"
-              id="fullname"
+              name="name"
+              id="name"
               required="required"
             />
-            <span>Full Name</span>
+            <span>Your Name</span>
           </div>
           <div class="input-box">
             <input type="text" name="email" id="email"
@@ -193,7 +193,7 @@
           </div>
           
           <div class="input-box">
-            <textarea 
+            <textarea type="text" 
             required="required"
              name="message" id="message"></textarea>
              <span>Type your Message...</span>
@@ -219,6 +219,24 @@
       <p data-aos="fade-up">Made with <3</p>
       <p>Copyright &#169; 2023 Franz Luya. All Rights Reserved.</p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+    function sendEmail(){
+      Email.send({
+        SecureToken : "170f7107-e4f3-42a7-a238-11d01c67bbca",
+        To : 'franzzzluya@gmail.com',
+        From : "franzzzluya@gmail.com",
+        Subject : "New Contact Form Message",
+        Body : "Name:" + document.getElementById("name").value + 
+        "<br>Email: " + document.getElementById("email").value + 
+        "<br>Message: " + document.getElementById("message").value
+    }).then(
+      message => alert("Message Sent Successfully")
+      
+    );
+    }
+  </script>
     <script src="script.js"></script>
   </body>
 </html>
