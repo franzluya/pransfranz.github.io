@@ -90,13 +90,15 @@ a {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
   z-index: 5;
-  padding: 5px;
+  padding: 20px;
+  
 }
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -366,11 +368,12 @@ section {
   font-size: 2rem;
 }
 .note {
-  margin: 5rem auto;
+  margin: 2rem auto;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 1rem;
   padding: 1.5rem;
   width: 80%;
+  height: 70%;
 }
 .note p {
   font-size: 0.8rem;
@@ -386,7 +389,7 @@ section {
   padding-top: 20px;
   text-align: center;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .contact-info-container {
@@ -422,7 +425,7 @@ section {
 }
 .contact-form .input-box {
   position: relative;
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
   padding: 10px 0;
 }
@@ -467,11 +470,17 @@ section {
   background: #000000;
   padding: 10px 0;
   color: #fff;
+  border-radius: 1.2rem;
+  border: rgb(53, 53, 53) 0.12rem solid;
 }
-
+.contact-form .input-box input[type="submit"]:hover{
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  color: rgb(53, 53, 53);
+}
 footer {
-  padding-top: 5rem;
-  height: 26vh;
+  padding-top: 3rem;
+  height: 70px;
   margin: 0 1rem;
 }
 
