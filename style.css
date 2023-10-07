@@ -36,7 +36,7 @@ nav {
   position: relative;
   align-items: center;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   font-family:'Hammersmith One', sans-serif;
 }
@@ -92,13 +92,13 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  z-index: 5;
-  padding: 20px;
+  z-index: 77;
+  padding: 0 30px;
   
 }
 .menu-links a {
   display: block;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
@@ -167,9 +167,10 @@ section {
 }
 
 .section_text_p1 {
+  
   padding-top: 1rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .section_text_p2 {
   text-align: center;
@@ -201,12 +202,13 @@ section {
   }
 }
 .title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-align: center;
+  font-family: 'Hammersmith One', sans-serif;
 }
 .emoji {
-  font-size: calc(18px + 1vw);
-  min-width: 1.4em;
+  font-size: calc(10px + 1vw);
+  min-width: 1em;
   text-align: center;
 }
 
