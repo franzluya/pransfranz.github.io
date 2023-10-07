@@ -67,9 +67,12 @@
 @media screen and (max-width: 600px) {
   
   #profile {
-    height: 82vh;
+    
     margin-bottom: 0;
     margin-top: 30px;
+  }
+  .title{
+    font-size: 2rem;
   }
   #about {
     padding-top: 10px;
@@ -77,11 +80,6 @@
   }
   #skills{
     padding-top: 20vh;
-  }
-  footer nav {
-    margin-top: 70vh;
-    height: fit-content;
-    margin-bottom: 2rem;
   }
   .about-container .btn-container {
     flex-wrap: wrap;
@@ -129,5 +127,17 @@
   .contact-form .input-box {
     width: 75vw;
   }
-
+.footer-content{
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  
+}
+.footer-info h3{
+  font-size: 20px;
+}
+.footer-info p{
+  font-size: 13px;
+  margin-bottom: 23px;
+}
 }

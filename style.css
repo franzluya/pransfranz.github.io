@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html {
@@ -306,6 +308,9 @@ section {
   text-align: center;
 }
 
+.details-container p span{
+  color: #017c78;
+}
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -479,7 +484,7 @@ section {
 }
 
 .footer{
-  margin-top: 170px;
+  margin-top: 140px;
   background-color: #0e0e0e;
   color: hsl(0, 0%, 100%);
   padding: 50px 0;
