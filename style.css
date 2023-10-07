@@ -35,9 +35,10 @@ nav {
   display: flex;
   position: relative;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
+  font-family:'Hammersmith One', sans-serif;
 }
 
 .nav-links li a:hover {
