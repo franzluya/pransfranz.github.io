@@ -7,9 +7,27 @@
   box-sizing: border-box;
   
 }
-
+html,body{
+  overflow-x:hidden;
+}
 html {
   scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #aaaaaa;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #616161;
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -30,25 +48,21 @@ nav {
   display: flex;
   justify-content: space-around;
   height: 15vh;
+  background-color: #0e0e0e;
 }
 .logo {
   display: flex;
-  position: relative;
   align-items: center;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  gap: 1rem;
+  font-weight: 500;
   cursor: pointer;
-  font-family:'Hammersmith One', sans-serif;
+  color: #fff;
+}
+.logo p{
+  text-decoration: none;
 }
 
-.nav-links li a:hover {
-  color: rgb(53, 53, 53);
-  text-decoration: underline;
-  text-decoration-color: rgb(53, 53, 53);
-  text-underline-offset: 15px;
-  text-decoration-thickness: 2px;
-  transition: all 200ms ease;
-}
 .nav-links {
   list-style-type: none;
   display: flex;
@@ -56,18 +70,40 @@ nav {
   gap: 2rem;
 }
 
-a {
+.nav-links li a {
+
   text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #03b8b2;
+  transition: width 0.4s ease;
 }
 
+nav li:hover a::after {
+  width: 100%;
+}
+
+nav li:hover a {
+  color: #fff;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+}
 #mobile-nav {
   display: none;
+  background-color: #0e0e0e;
 }
 .mobile-menu {
   position: relative;
   display: inline-block;
+  
 }
 .menu-icon {
   display: flex;
@@ -76,18 +112,20 @@ a {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  
 }
 .menu-icon span {
   width: 100%;
-  height: 2px;
-  background-color: black;
+  height: 3px;
+  background-color: #d8d8d8f3;
   transition: all 0.3 ease-in-out;
 }
 .menu-links {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  color: #d8d8d8f3;
+  background-color: #0e0e0e;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -102,7 +140,7 @@ a {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
-  color: black;
+  color: #d8d8d8f3;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -144,8 +182,11 @@ section {
 #profile {
   display: flex;
   justify-content: center;
+  padding-bottom: 70px;
   gap: 5rem;
-  height: 80vh;
+  height: 100vh;
+  color: #d8d8d8f3;
+  background: #0e0e0e;
 }
 
 .section_pic-container {
@@ -160,10 +201,17 @@ section {
 .section_text {
   align-self: center;
   text-align: center;
+  
 }
-
+.pfname{
+  color: #017c78;
+}
 .section_text p {
   font-weight: 600;
+}
+.section_text p:first-of-type {
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .section_text_p1 {
@@ -172,15 +220,21 @@ section {
   text-align: center;
   font-size: 1rem;
 }
-.section_text_p2 {
+.typewriter{
+  width:70%;
+  margin: 0 auto;
+}
+.typewriter .section_text_p2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid rgb(0, 0, 0); /* The typwriter cursor */
+  border-right: 0.15em solid #d8d8d8f3; /* The typwriter cursor */
+  margin-right: 16px;
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 
-  animation: typing 4.5s steps(50, end), blink-caret 0.75s step-end infinite;
+  animation: typing 4.5s steps(50, end), blink-caret 0.80s step-end infinite;
 }
 @keyframes typing {
   from {
@@ -198,7 +252,7 @@ section {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(0, 0, 0);
+    border-color: #d8d8d8f3;
   }
 }
 .title {
@@ -206,27 +260,23 @@ section {
   text-align: center;
   font-family: 'Hammersmith One', sans-serif;
 }
-.emoji {
-  font-size: calc(10px + 1vw);
-  min-width: 1em;
-  text-align: center;
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
 }
 
-.emoji::after {
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.wave::after {
-  content: "✋";
-  --emoji: "👋";
-  animation-name: twoFrames;
-  animation-duration: 1.4s;
-}
-
-@keyframes twoFrames {
-  50% {
-    content: var(--emoji);
-  }
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(15.0deg) }
+   40% { transform: rotate(-5.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
 
 .btn-container {
@@ -241,11 +291,10 @@ section {
   transition: all 300ms ease;
   padding: 1rem;
   width: 7rem;
-  border-radius: 2rem;
 }
-.btn1,
 .btn2 {
-  border: rgb(53, 53, 53) 0.12rem solid;
+  border: rgb(53, 53, 53) 0.2rem solid;
+  background-color: #d8d8d8f3;
 }
 .btn2 {
   background-color: black;
@@ -261,16 +310,17 @@ section {
   background: rgb(255, 255, 255);
   color: rgb(53, 53, 53);
 }
-.socials-container {
+.socials-container-header {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1.2rem;
-  gap: 1.2rem;
+  gap: 1.3rem;
 }
-.icon {
+.social-icon-header {
   cursor: pointer;
-  height: 2.3rem;
+  color: #d8d8d8f3;
+  font-size: 34px;
 }
 
 #about {

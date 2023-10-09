@@ -2,12 +2,8 @@
   #mobile-nav {
     height: 12vh;
   }
-  #profile {
-    margin-bottom: 0;
-  }
   #about {
     flex-wrap: wrap;
-    padding-top: 0;
   }
   #contact {
     margin-top: 100px;
@@ -19,7 +15,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   #navbar {
     display: none;
   }
@@ -64,11 +60,18 @@
 
 @media screen and (max-width: 600px) {
   #profile {
-    padding: 0 35px;
-    margin-top: 50px;
+    padding: 80px 35px 0px 35px;
+    height: 94vh;
   }
   .title {
     font-size: 2rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .logo-img {
+    height: 50px;
+    width: 50px;
   }
   .emoji {
     font-size: calc(15px + 1vw);
@@ -98,12 +101,19 @@
   .section_text_p1:first-of-type {
     padding-top: 1rem;
   }
+  .section_text p:first-of-type {
+    font-size: 15px;
+  }
   .section_text_p2 {
     font-size: 1rem;
   }
   .section-text {
     margin-top: 3px;
     padding-top: 1rem;
+  }
+  .btn {
+    margin-top: 5px;
+    padding: 15px;
   }
   .note {
     margin: 0;
