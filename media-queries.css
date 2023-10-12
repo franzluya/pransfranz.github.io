@@ -64,7 +64,7 @@
     height: 94vh;
   }
   .title {
-    font-size: 2rem;
+    font-size: 30px;
   }
   .logo {
     font-size: 1rem;
@@ -75,7 +75,10 @@
     width: 60px;
   }
   .typewriter{
-    width: 95%;
+    width: 91%;
+  }
+  .social-icon-header{
+    font-size: 26px;
   }
   
   .emoji {
@@ -97,8 +100,9 @@
   }
   .section_pic-container {
     width: auto;
-    height: 64vw;
+    height: 54vw;
     justify-content: center;
+    margin-bottom: 10px;
   }
   .text-container {
     text-align: justify;
@@ -107,11 +111,11 @@
     padding-top: 1rem;
   }
   .section_text p:first-of-type {
-    font-size: 15px;
+    font-size: 12px;
   }
   .section_text_p2 {
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 10px;
+    font-weight: 300;
   }
   .section-text {
     margin-top: 3px;
@@ -126,6 +130,7 @@
     width: 80vw;
     margin: 0 auto;
   }
+
   .note .note h1 {
     font-size: 0.3 rem;
     font-weight: 200;
