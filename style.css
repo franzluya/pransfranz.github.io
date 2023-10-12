@@ -126,11 +126,10 @@ nav li:hover {
   right: 0;
   color: #fff;
   background-color: #0e0e0e;
-  width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  z-index: 77;
+  z-index: -3;
   padding: 20px 20px;
   
 }
@@ -148,7 +147,8 @@ nav li:hover {
   list-style: none;
 }
 .menu-links.open {
-  max-height: 300px;
+  max-height: 400px;
+  z-index: 99;
 }
 .menu-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
@@ -536,7 +536,7 @@ section {
 }
 
 .footer{
-  margin-top: 140px;
+  margin-top: 80px;
   background-color: #0e0e0e;
   color: hsl(0, 0%, 100%);
   padding: 50px 0;
