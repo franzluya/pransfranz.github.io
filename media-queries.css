@@ -34,6 +34,7 @@
     height: fit-content;
   }
   section {
+    
     margin: 0 5%;
   }
   .section_pic-container {
@@ -60,8 +61,8 @@
 
 @media screen and (max-width: 600px) {
   #profile {
-    padding: 80px 35px 0px 35px;
-    height: 94vh;
+    padding-top: 18vh;
+    height: 90vh;
   }
   .title {
     font-size: 24px;
@@ -74,21 +75,15 @@
     height: 60px;
     width: 60px;
   }
-  .typewriter{
-    width: 90%;
-  }
+#about, #skills, #projects, #contact{
+  padding-top: 12vh;
+}
   .social-icon-header{
     font-size: 26px;
   }
   
   .emoji {
     font-size: calc(15px + 1vw);
-  }
-  #about {
-    padding-top: 10px;
-  }
-  #skills {
-    padding-top: 50px;
   }
   .about-container .btn-container {
     flex-wrap: wrap;
@@ -123,7 +118,7 @@
   }
   .btn {
     margin-top: 5px;
-    padding: 15px;
+    padding: 17px;
   }
   .note {
     margin: 0;
