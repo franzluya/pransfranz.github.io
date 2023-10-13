@@ -101,7 +101,7 @@ nav li:hover {
   position: fixed;
   display: none;
   background-color: #0e0e0e;
-  height: 20vh;
+  height: 10vh;
   z-index: 99999;
 }
 .mobile-menu {
@@ -127,7 +127,7 @@ nav li:hover {
 .menu-links {
   display: none;
   position:fixed; 
-  top: 11vh;
+  top: 10vh;
   width: 100%;
   color: #fff;
   background-color: #0e0e0e;
