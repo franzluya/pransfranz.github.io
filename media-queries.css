@@ -64,7 +64,7 @@
     height: 94vh;
   }
   .title {
-    font-size: 30px;
+    font-size: 24px;
   }
   .logo {
     font-size: 1rem;
@@ -75,7 +75,7 @@
     width: 60px;
   }
   .typewriter{
-    width: 91%;
+    width: 80%;
   }
   .social-icon-header{
     font-size: 26px;
@@ -111,11 +111,11 @@
     padding-top: 1rem;
   }
   .section_text p:first-of-type {
-    font-size: 12px;
-  }
-  .section_text_p2 {
     font-size: 10px;
-    font-weight: 300;
+  }
+  .typewriter .section_text_p2 {
+    font-size: 16px;
+    font-weight: 500;
   }
   .section-text {
     margin-top: 3px;
@@ -145,6 +145,9 @@
 
   .contact-form .input-box {
     width: 75vw;
+  }
+  .footer{
+    margin-top: 80px;
   }
   .footer-content {
     flex-direction: column;

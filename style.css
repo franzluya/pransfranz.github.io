@@ -211,7 +211,7 @@ section {
 }
 .section_text p:first-of-type {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .section_text_p1 {
@@ -221,12 +221,12 @@ section {
   font-size: 1rem;
 }
 .typewriter{
-  width:70%;
+  width:80%;
   margin: 0 auto;
 }
 .typewriter .section_text_p2 {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #d8d8d8f3; /* The typwriter cursor */
@@ -256,7 +256,7 @@ section {
   }
 }
 .title {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-align: center;
   font-family: 'Hammersmith One', sans-serif;
 }
@@ -340,6 +340,10 @@ section {
 .section-container {
   display: flex;
 }
+.icon{
+  width: 28px;
+  height: auto;
+}
 .education-title {
   display: flex;
   align-items: center;
@@ -421,7 +425,7 @@ section {
 
 .note span {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .note {
   margin: 2rem auto;
@@ -445,7 +449,7 @@ section {
   padding-top: 20px;
   text-align: center;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .contact-info-container {
@@ -536,7 +540,7 @@ section {
 }
 
 .footer{
-  margin-top: 80px;
+  margin-top: 150px;
   background-color: #0e0e0e;
   color: hsl(0, 0%, 100%);
   padding: 50px 0;
