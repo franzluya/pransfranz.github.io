@@ -78,8 +78,8 @@
   .btn1{
     font-size: 11px;
   }
-#about, #skills, #projects, #contact{
-  padding-top: 14vh;
+section:not(#home){
+  padding-top: 10vh;
 }
   .social-icon-header{
     font-size: 26px;
