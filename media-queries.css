@@ -69,11 +69,14 @@
   }
   .logo {
     font-size: 1rem;
-    gap: 0.5rem;
+    gap: 0;
   }
   .logo-img {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
+  }
+  .btn1{
+    font-size: 11px;
   }
 #about, #skills, #projects, #contact{
   padding-top: 12vh;

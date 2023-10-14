@@ -54,7 +54,7 @@ nav {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
-  gap: 1rem;
+  gap: 10px;
   font-weight: 500;
   cursor: pointer;
   color: #fff;
