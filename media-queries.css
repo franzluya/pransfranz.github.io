@@ -29,11 +29,11 @@
   .section-container {
     display: block;
   }
-  section,
+  section:not(#home),
   .section-container {
     height: fit-content;
   }
-  section {
+  section:not(#home) {
     
     margin: 0 5%;
   }

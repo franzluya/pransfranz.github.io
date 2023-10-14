@@ -17,7 +17,7 @@
   <body>
     <nav id="navbar">
       <a href="#home">
-        <div class="logo">
+        <div class="logo" onclick="location.href='#home'"">
           <img class="logo-img" src="images/logoicon.jpg" alt="logo" />Franz.dev
         </div>
       </a>
@@ -29,10 +29,12 @@
       </ul>
     </nav>
     <nav id="mobile-nav">
+      <div class="logo" onclick="location.href='#home'"">
       <div class="logo">
         <img class="logo-img" src="images/logoicon.jpg" alt="logo"/>
         <p>Franz.dev</p>
       </div>
+    </div>
       <div class="mobile-menu">
         <div class="menu-icon" onclick="toggleMenu()">
           <span></span>
@@ -48,8 +50,9 @@
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
     </nav>
-    
+    <section id="home"></section>
     <div id="profile">
+      
        <div data-aos="zoom-in" class="section_pic-container">
         <img
           src="images/nft.png"
@@ -78,8 +81,9 @@
             Message me Anonymously
         </div>
       </div>
-     
+    
     </div>
+  </section>
     <section id="about">
       <p data-aos="fade-up" class="section_text_p1">Get to know more</p>
       <h1 data-aos="fade-up" class="title">About Me</h1>
