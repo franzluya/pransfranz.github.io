@@ -89,11 +89,8 @@ nav li:hover a::after {
   width: 100%;
 }
 
-nav li:hover a {
-  color: #fff;
-}
 
-nav li:hover {
+nav li:hover{
   transform: scale(1.1);
 }
 #mobile-nav {
@@ -365,9 +362,7 @@ section:not(#home) {
   padding: 1.5rem;
   flex: 1;
   background: white;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   text-align: center;
 }
 
@@ -436,8 +431,7 @@ section:not(#home) {
 }
 .note {
   margin: 2rem auto;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 1.5rem;
   width: 80%;
   height: 70%;
@@ -486,9 +480,7 @@ section:not(#home) {
   align-items: center;
   padding: 1rem 1rem;
   width: fit-content;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .contact-form .input-box {
   position: relative;
